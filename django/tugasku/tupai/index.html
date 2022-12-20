@@ -1,0 +1,60 @@
+*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tradisi madura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+
+          <vidio autoplay loop muted plays-inline id="backVideo">
+            <source src="image/video.mp4" type="video/mp4">
+        </vidio>
+
+        <img src="image/hamburger.png" class="menu-icon">
+
+        <div class="sidebar">
+            <div class="top-links">
+                <img src="images/arrow.png" class="arrow-icon">
+                <div>
+                    <img src="image/audio.png">
+                    <img src="image/link.png">
+                </div>
+            </div>
+
+            <h1>Gong Mania</h1>
+            <h3>Tong-Tong, SUMENEP</h3>
+            <p>Gong mania adalah sebuah seni musik tong-tong yang ada di pulau madura tepatnya dikabupaten sumenep</p>
+
+            <a href="#">More Details</a>
+
+        </div>
+
+        <img src="image/play.png" id="btn">
+
+    </div>
+
+    <script>
+
+        let backVideo = document.getElementById("backVideo");
+        let btn = document.getElementById("btn");
+
+        btn.onclick = function(){
+            backVideo.style.display = "block";
+
+            if(backVideo.paused){
+                backVideo.play();
+            }
+            else{
+                backVideo.pause();
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
